@@ -1,0 +1,96 @@
+@charset 'utf-8';
+
+.alert {
+  color: #f66;
+}
+
+
+.contact-form {
+  width: min(500px, calc(100% - 2rem));
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(30, 30, 60, 0.15);
+  padding: 36px 32px 28px 32px;
+  font-family: 'Noto Sans JP', 'Yu Gothic', YuGothic, 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+}
+.contact-form h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  letter-spacing: 0.08em;
+  color: #2c2c2c;
+  margin-bottom: 28px;
+  font-weight: 700;
+}
+.contact-form label {
+  display: block;
+  margin-bottom: 8px;
+  color: #444;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+}
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 18px;
+  border: 1.5px solid #e0e0e0;
+  border-radius: 8px;
+  background: #fafafc;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+  box-sizing: border-box;
+}
+.contact-form input[type="text"]:focus,
+.contact-form input[type="email"]:focus,
+.contact-form textarea:focus {
+  border-color: #bfa36f;
+  outline: none;
+  background: #fffbe7;
+}
+.contact-form textarea {
+  min-height: 90px;
+  resize: vertical;
+}
+.contact-form .info {
+  font-size: 0.92rem;
+  color: #a28d5b;
+  margin-bottom: 4px;
+}
+.contact-form .count {
+  font-size: 0.92rem;
+  color: #888;
+  margin-bottom: 18px;
+}
+.contact-form .agreement {
+  display: flex;
+  align-items: center;
+  font-size: 0.98rem;
+  margin-bottom: 22px;
+  color: #555;
+  cursor: pointer;
+}
+.contact-form input[type="checkbox"] {
+  accent-color: #bfa36f;
+  margin-right: 8px;
+}
+.contact-form input[type="submit"] {
+  width: 100%;
+  padding: 13px 0;
+  background: #bfa36f;
+  color: #fff;
+  font-size: 1.08rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(191, 163, 111, 0.12);
+  cursor: pointer;
+  transition: background 0.2s, opacity 0.2s;
+  letter-spacing: 0.08em;
+}
+.contact-form input[type="submit"]:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  background: #d3c6ad;
+}
