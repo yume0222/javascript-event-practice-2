@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+  <form class="contact-form">
+    <h2>お問い合わせ</h2>
+    <label for="name">お名前</label>
+    <input type="text" id="name" name="name" required>
+  
+    <label for="email">メールアドレス</label>
+    <input type="email" id="email" name="email" required>
+    
+    <label for="message">お問い合わせ内容</label>
+    <textarea id="text"></textarea>
+    <p class="info">100文字以内で入力してください</p>
+    <p class="count">現在<span id="count"></span>文字</p>
+
+    <label class="agreement"><input id="check" type="checkbox">利用契約に同意する</label>
+    <input id="btn" type="submit" value="送信する" disabled>
+  </form>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
